@@ -18,7 +18,7 @@ def new_meal(customer, total, tip=0)
   end
 
 def meals
-Meal.all.detect { |meal|meal.waiter == self }
+Meal.all.select { |meal|meal.waiter == self }
 end
 
 end
